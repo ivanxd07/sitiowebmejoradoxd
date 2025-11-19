@@ -1,0 +1,102 @@
+/* styles.css */
+
+/*
+  Nueva Paleta para GAME STUDIO STORE:
+  - Fondo Primario: Negro Profundo (#0a0a0a)
+  - Fondo Secundario/Tarjetas: Gris Oscuro (similar a Bootstrap bg-dark)
+  - Texto Principal: Blanco Brillante
+  - Acento/Destacado: Rojo de Acción (#e63946) y Amarillo Ciberpunk (#ffc300)
+*/
+
+/* Estilo para el cuerpo del documento */
+body {
+    /* Fondo negro profundo para un look gamer premium */
+    background-color: #0a0a0a; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff; /* Texto blanco brillante */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    /* Fondo de tarjeta oscuro, pero distinto al fondo principal */
+    background-color: #1a1a1a; 
+    /* Borde destacado en color de acento */
+    border: 1px solid #e63946; 
+    border-radius: 10px; /* Bordes más marcados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Sombra intensa */
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #f8f9fa; 
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 220px;
+    object-fit: cover;
+}
+
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+    padding: 20px;
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    font-size: 24px; 
+    /* Usamos el color de acento más llamativo */
+    color: #ffc300; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Efecto de borde de texto sutil si el navegador lo soporta */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+/* Estilo para el texto de la tarjeta */
+.card-text {
+    font-size: 16px;
+    color: #cccccc; /* Gris claro para mejor contraste en la tarjeta oscura */
+}
+
+/* Efecto hover para las tarjetas */
+.card:hover {
+    /* Desplazamiento y brillo */
+    transform: translateY(-7px) scale(1.03); 
+    box-shadow: 0 12px 25px rgba(230, 57, 70, 0.4); /* Sombra con el color de acento rojo */
+}
+
+/* Estilo para los botones (usando la clase de Bootstrap .btn-primary) */
+.btn-primary {
+    /* Botón principal en rojo de acción */
+    background-color: #e63946; 
+    border-color: #e63946;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #d62c3b; /* Tono más oscuro en hover */
+    border-color: #d62c3b;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 576px) {
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 15px;
+    }
+}
